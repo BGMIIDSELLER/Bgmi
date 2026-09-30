@@ -1,1 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BGMI MY - Premium ID Seller</title>
 
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+color:#111
+}
+
+.header{
+background:#111;
+color:white;
+text-align:center;
+padding:22px 10px
+}
+
+.logo{
+font-size:28px;
+font-weight:800
+}
+
+.tagline{
+font-size:16px;
+margin-top:5px
+}
+
+.trusted{
+display:inline-block;
+margin-top:8px;
+background:#222;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px
+}
+
+.page{
+max-width:600px;
+margin:auto;
+padding:13px
+}
+
+.intro{
+text-align:center;
+padding:12px 5px 16px
+}
+
+.intro h2{font-size:21px}
+
+.intro p{
+font-size:13px;
+color:#666;
+margin-top:5px
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:11px;
+margin-bottom:17px;
+box-shadow:0 3px 12px #00000018
+}
+
+.name{
+font-size:19px;
+font-weight:bold;
+margin:3px 4px 11px
+}
+
+.gallery{
+display:flex;
+overflow-x:auto;
+gap:8px;
+scroll-snap-type:x mandatory;
+scrollbar-width:none
+}
+
+.gallery::-webkit-scrollbar{display:none}
+
+.gallery img{
+min-width:100%;
+height:330px;
+object-fit:cover;
+border-radius:11px;
+scroll-snap-align:center
+}
+
+.price{
+font-size:25px;
+font-weight:bold;
+margin:14px 4px
+}
+
+.btn{
+width:100%;
+border:0;
+border-radius:10px;
+padding:15px;
+background:#111;
+color:white;
+font-size:17px;
+font-weight:bold
+}
+
+.note{
+text-align:center;
+font-size:12px;
+color:#777;
+margin-top:8px
+}
+
+#detailPage,#paymentPage{display:none}
+
+.back{
+border:0;
+background:#ddd;
+padding:10px 15px;
+border-radius:8px;
+font-weight:bold;
+margin-bottom:10px
+}
+
+.detail{
+background:white;
+padding:11px;
+border-radius:15px;
+box-shadow:0 3px 12px #00000018
+}
+
+.detail-title{
+font-size:22px;
+font-weight:bold;
+margin:5px 4px 13px
+}
+
+.detail-gallery{
+display:flex;
+overflow-x:auto;
+gap:8px;
+scroll-snap-type:x mandatory;
+scrollbar-width:none
+}
+
+.detail-gallery::-webkit-scrollbar{display:none}
+
+.detail-gallery img{
+min-width:100%;
+height:420px;
+object-fit:cover;
+border-radius:11px;
+scroll-snap-align:center
+}
+
+.payment{
+background:white;
+border-radius:15px;
+padding:18px;
+text-align:center;
+box-shadow:0 3px 12px #00000018
+}
+
+.payment h2{
+font-size:24px;
+margin-bottom:5px
+}
+
+.amount{
+font-size:34px;
+font-weight:bold;
+margin:14px 0
+}
+
+.timer{
+background:#fff0f0;
+color:#d00000;
+border:1px solid #ffd0d0;
+padding:11px;
+border-radius:9px;
+font-weight:bold;
+margin-bottom:16px
+}
+
+.qr{
+width:245px;
+height:245px;
+object-fit:contain;
+display:block;
+margin:10px auto 17px
+}
+
+.upi{
+background:#f3f3f3;
+padding:12px;
+border-radius:9px;
+margin-bottom:15px;
+word-break:break-all
+}
+
+.instructions{
+background:#fafafa;
+padding:13px;
+border-radius:10px;
+text-align:left;
+font-size:14px;
+line-height:1.7;
+margin-bottom:16px
+}
+
+#downloadBox{
+display:none;
+margin-top:20px;
+padding:16px;
+border-radius:10px;
+background:#eaffea;
+border:1px solid #b9e8b9
+}
+
+.download-title{
+font-size:18px;
+font-weight:bold
+}
+
+.download-text{
+font-size:13px;
+line-height:1.5;
+margin-top:7px
+}
+
+.download{
+display:block;
+text-decoration:none;
+background:#168a32;
+color:white;
+padding:14px;
+border-radius:9px;
+margin-top:13px;
+font-weight:bold
+}
+
+.footer{
+text-align:center;
+color:#777;
+font-size:12px;
+padding:20px
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+<div class="logo">BGMI MY</div>
+<div class="tagline">Premium ID Seller</div>
+<div class="trusted">✓ Trusted • Verified Seller</div>
+</div>
+
+
+<!-- HOME -->
+<div id="homePage" class="page">
+
+<div class="intro">
+<h2>Premium BGMI IDs</h2>
+<p>Swipe photos and choose your ID</p>
+</div>
+
+
+<!-- ID 1 -->
+<div class="card">
+
+<div class="name">BGMI Premium ID #1</div>
+
+<div class="gallery">
+<img src="IMG_20260930_073955_202.jpg">
+<img src="IMG_20260930_073955_257.jpg">
+<img src="IMG_20260930_073955_346.jpg">
+<img src="IMG_20260930_073955_527.jpg">
+</div>
+
+<div class="price">₹999</div>
+
+<button class="btn" onclick="openDetails(1)">
+VIEW ID
+</button>
+
+<div class="note">Swipe to see all photos</div>
+
+</div>
+
+
+<!-- ID 2 -->
+<div class="card">
+
+<div class="name">BGMI Premium ID #2</div>
+
+<div class="gallery">
+<img src="IMG_20260930_074058_007.jpg">
+<img src="IMG_20260930_074058_015.jpg">
+<img src="IMG_20260930_074058_121.jpg">
+<img src="IMG_20260930_074058_167.jpg">
+<img src="IMG_20260930_074058_359.jpg">
+<img src="IMG_20260930_074058_492.jpg">
+<img src="IMG_20260930_074058_566.jpg">
+<img src="IMG_20260930_074058_662.jpg">
+<img src="IMG_20260930_074058_681.jpg">
+<img src="IMG_20260930_074058_815.jpg">
+</div>
+
+<div class="price">₹999</div>
+
+<button class="btn" onclick="openDetails(2)">
+VIEW ID
+</button>
+
+<div class="note">Swipe to see all photos</div>
+
+</div>
+
+
+<!-- ID 3 -->
+<div class="card">
+
+<div class="name">BGMI Premium ID #3</div>
+
+<div class="gallery">
+<img src="IMG_20260930_074235_867.jpg">
+</div>
+
+<div class="price">₹999</div>
+
+<button class="btn" onclick="openDetails(3)">
+VIEW ID
+</button>
+
+</div>
+
+
+<!-- ID 4 -->
+<div class="card">
+
+<div class="name">BGMI Premium ID #4</div>
+
+<div class="gallery">
+<img src="IMG_20260930_074321_637.jpg">
+<img src="IMG_20260930_074321_673.jpg">
+<img src="IMG_20260930_074321_840.jpg">
+<img src="IMG_20260930_074321_896.jpg">
+<img src="IMG_20260930_074321_903.jpg">
+<img src="IMG_20260930_074322_060.jpg">
+<img src="IMG_20260930_074322_114.jpg">
+<img src="IMG_20260930_074322_134.jpg">
+<img src="IMG_20260930_074322_354.jpg">
+<img src="IMG_20260930_074322_411.jpg">
+</div>
+
+<div class="price">₹999</div>
+
+<button class="btn" onclick="openDetails(4)">
+VIEW ID
+</button>
+
+<div class="note">Swipe to see all photos</div>
+
+</div>
+
+<div class="footer">
+BGMI MY • Premium ID Seller
+</div>
+
+</div>
+
+
+<!-- DETAIL PAGE -->
+<div id="detailPage" class="page">
+
+<button class="back" onclick="goHome()">← BACK</button>
+
+<div class="detail">
+
+<div id="detailTitle" class="detail-title">
+BGMI Premium ID
+</div>
+
+<div id="detailGallery" class="detail-gallery"></div>
+
+<div class="price">₹999</div>
+
+<button class="btn" onclick="openPayment()">
+BUY NOW — ₹999
+</button>
+
+</div>
+
+</div>
+
+
+<!-- PAYMENT PAGE -->
+<div id="paymentPage" class="page">
+
+<button class="back" onclick="goDetails()">← BACK</button>
+
+<div class="payment">
+
+<h2>Scan & Pay</h2>
+
+<div>BGMI Premium ID</div>
+
+<div class="amount">₹999</div>
+
+<div class="timer">
+Pay within <span id="timer">10:00</span>
+</div>
+
+
+<!-- QR -->
+<img
+src="payment-qr.jpg"
+class="qr"
+alt="Scan and Pay QR Code"
+>
+
+
+<div class="upi">
+<b>UPI ID</b><br>
+raj-963518@ptyes
+</div>
+
+
+<div class="instructions">
+
+<b>How to Pay</b><br>
+
+1. Scan the QR code with your UPI app.<br>
+2. Pay exactly ₹999.<br>
+3. Complete the payment.<br>
+4. Your ID & Password will be downloaded automatically after successful payment.
+
+</div>
+
+
+<button class="btn" onclick="paymentDone()">
+SCAN & PAY ₹999
+</button>
+
+
+<div id="downloadBox">
+
+<div class="download-title">
+Payment Successful
+</div>
+
+<div class="download-text">
+After successful payment, your BGMI ID & Password will be downloaded automatically.
+</div>
+
+<a href="id-password.txt"
+download
+class="download">
+DOWNLOAD ID & PASSWORD
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+const products={
+
+1:[
+"IMG_20260930_073955_202.jpg",
+"IMG_20260930_073955_257.jpg",
+"IMG_20260930_073955_346.jpg",
+"IMG_20260930_073955_527.jpg"
+],
+
+2:[
+"IMG_20260930_074058_007.jpg",
+"IMG_20260930_074058_015.jpg",
+"IMG_20260930_074058_121.jpg",
+"IMG_20260930_074058_167.jpg",
+"IMG_20260930_074058_359.jpg",
+"IMG_20260930_074058_492.jpg",
+"IMG_20260930_074058_566.jpg",
+"IMG_20260930_074058_662.jpg",
+"IMG_20260930_074058_681.jpg",
+"IMG_20260930_074058_815.jpg"
+],
+
+3:[
+"IMG_20260930_074235_867.jpg"
+],
+
+4:[
+"IMG_20260930_074321_637.jpg",
+"IMG_20260930_074321_673.jpg",
+"IMG_20260930_074321_840.jpg",
+"IMG_20260930_074321_896.jpg",
+"IMG_20260930_074321_903.jpg",
+"IMG_20260930_074322_060.jpg",
+"IMG_20260930_074322_114.jpg",
+"IMG_20260930_074322_134.jpg",
+"IMG_20260930_074322_354.jpg",
+"IMG_20260930_074322_411.jpg"
+]
+
+};
+
+let selectedProduct=1;
+let timerInterval;
+
+function openDetails(id){
+
+selectedProduct=id;
+
+document.getElementById("homePage").style.display="none";
+document.getElementById("paymentPage").style.display="none";
+document.getElementById("detailPage").style.display="block";
+
+document.getElementById("detailTitle").innerText=
+"BGMI Premium ID #"+id;
+
+let gallery=document.getElementById("detailGallery");
+
+gallery.innerHTML="";
+
+products[id].forEach(function(photo){
+
+let img=document.createElement("img");
+
+img.src=photo;
+img.loading="lazy";
+
+gallery.appendChild(img);
+
+});
+
+window.scrollTo(0,0);
+}
+
+function goHome(){
+
+document.getElementById("detailPage").style.display="none";
+document.getElementById("paymentPage").style.display="none";
+document.getElementById("homePage").style.display="block";
+
+window.scrollTo(0,0);
+}
+
+function openPayment(){
+
+document.getElementById("homePage").style.display="none";
+document.getElementById("detailPage").style.display="none";
+document.getElementById("paymentPage").style.display="block";
+
+document.getElementById("downloadBox").style.display="none";
+
+startTimer();
+
+window.scrollTo(0,0);
+}
+
+function goDetails(){
+
+document.getElementById("paymentPage").style.display="none";
+document.getElementById("detailPage").style.display="block";
+
+window.scrollTo(0,0);
+}
+
+function paymentDone(){
+
+document.getElementById("downloadBox").style.display="block";
+
+document.getElementById("downloadBox")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+function startTimer(){
+
+clearInterval(timerInterval);
+
+let seconds=600;
+
+document.getElementById("timer").innerText="10:00";
+
+timerInterval=setInterval(function(){
+
+seconds--;
+
+let minutes=Math.floor(seconds/60);
+let secs=seconds%60;
+
+document.getElementById("timer").innerText=
+String(minutes).padStart(2,"0")
++
+":"
++
+String(secs).padStart(2,"0");
+
+if(seconds<=0){
+
+clearInterval(timerInterval);
+
+document.getElementById("timer").innerText=
+"Time expired";
+
+}
+
+},1000);
+
+}
+
+</script>
+
+</body>
+  </html>
